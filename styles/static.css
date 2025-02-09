@@ -1,0 +1,37 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Изменение на вертикальную компоновку */
+  justify-content: flex-start; /* Центрирование по вертикали */
+  align-items: center; /* Центрирование по горизонтали */
+  font-family: 'Garamond', serif; /* Шрифт в стиле старинных книг */
+  background-color: #f5f0e1; /* Цвет фона, напоминающий пергамент */
+  color: #3b2c20; /* Темный цвет текста для лучшей читаемости */
+}
+
+a {
+  color: #8b5a2b; /* Цвет ссылок на странице */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 24px; /* Увеличенный размер шрифта для ссылок */
+}
+/* Заголовки */
+h1, h2, h3 {
+  text-align: center; /* Центрирование заголовков */
+  text-transform: uppercase; /* Заглавные буквы для заголовков */
+  letter-spacing: 2px; /* Межбуквенный интервал */
+}
+h3 {
+  font-size: 28px;
+}
+/* Стили для параграфов */
+p {
+  line-height: 1.6; /* Интервал между строками для удобства чтения */
+  margin-bottom: 15px; /* Отступ между абзацами */
+}
+hr {
+  background-color: #8b5a2b;
+  height: 2px;
+  border: none;
+  margin: 10px 0px;
+}
