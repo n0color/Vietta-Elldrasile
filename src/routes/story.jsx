@@ -1,18 +1,19 @@
 import React from "react";
+import classes from "../styles/classes.module.scss";
 
 function Story() {
   return(
     <>
-    <h1 class="header">Vietta Elldrasile</h1> 
-  <nav class="navbar">
-    <a href="../index.html">Главная</a>
-    <a href="#" class="hover">Сюжет</a>
-    <a href="mechanics.html">Справочник</a>
-    <a href="map.html">Карта</a>
-    <a href="kingdoms.html">Королевства</a>
-  </nav>
-  <main class="content">
-    <h2 class="header">Том 1. Некрония</h2>
+    <h1 className={classes.header}>Vietta Elldrasile</h1> 
+      <nav className={classes.navbar}>
+        <a href={`/`}>Главная</a>
+        <a href={`/story`}>Сюжет</a>
+        <a href={`/mechanics`}>Справочник</a>
+        <a href={`/map`}>Карта</a>
+        <a href={`/kingdoms`} className={classes.hover}>Королевства</a>
+      </nav>
+  <main  className={classes.content}>
+    <h2 className={classes.header}>Том 1. Некрония</h2>
     <div>
       <h3>Пролог. Пробуждение</h3>
       <p>Холодным зимним вечером трое героев очнулись в небольшом кабаке на окраине света. Их разум помутнён, 

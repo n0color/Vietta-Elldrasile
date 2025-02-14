@@ -1,18 +1,18 @@
 import React from "react";
-
+import classes from "../styles/classes.module.scss";
 function Mechanics() {
   return(
     <>
-    <h1 class="header">Vietta Elldrasile</h1> 
-  <nav class="navbar">
-    <a href="../index.html">Главная</a>
-    <a href="story.html">Сюжет</a>
-    <a href="#" class="hover">Справочник</a>
-    <a href="map.html">Карта</a>
-    <a href="kingdoms.html">Королевства</a>
-  </nav>
-  <main class="content">
-    <h2 class="header">Основной справочник</h2>
+    <h1 className={classes.header}>Vietta Elldrasile</h1> 
+      <nav className={classes.navbar}>
+        <a href={`/`}>Главная</a>
+        <a href={`/story`}>Сюжет</a>
+        <a href={`/mechanics`}>Справочник</a>
+        <a href={`/map`}>Карта</a>
+        <a href={`/kingdoms`} className={classes.hover}>Королевства</a>
+      </nav>
+  <main  className={classes.content}>
+    <h2 className={classes.header}>Основной справочник</h2>
     <div>
       <h3>Оглавление</h3>
       <span><a href="#magic-class">Магические классы</a></span><br /><hr />
