@@ -1,4 +1,4 @@
-import { StrictMode } from 'react';
+import { StrictMode, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { 
   BrowserRouter, 
@@ -17,12 +17,12 @@ import ErrorPage404 from './error404';
 const Router = createBrowserRouter([
   {
     path: '/',
-    element: <MainPage />,
+    element: <MainPage/>,
     errorElement: <ErrorPage404 />
   },
   {
     path: '/kingdoms',
-    element: <Kingdoms />
+    element: <Kingdoms/>
   },
   {
     path: '/map',
