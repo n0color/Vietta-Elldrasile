@@ -1,8 +1,4 @@
-# React + Vite
+# Vietta Elldrasile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Сайт для настольной игры, который я разрабатываю в одиночку с целью прокачать свои навыки фронтенд разработки и сделать опыт игры интереснее и проще!  <br>
+Большую часть технологий я учу по ходу работы с этим проектом, так что не пугайтесь качества кода пожалуйста :)<br> Это мой первый серьёзный пет-проект, так что стараюсь изо всех сил
