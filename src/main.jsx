@@ -12,6 +12,7 @@ import Map from "./routes/map";
 import Mechanics from "./routes/mechanics";
 import Story from "./routes/story";
 import MainPage from './mainpage';
+import Formules from './routes/formules';
 import ErrorPage404 from './error404';
 
 const Router = createBrowserRouter([
@@ -35,6 +36,10 @@ const Router = createBrowserRouter([
   {
     path: '/story',
     element: <Story />
+  },
+  {
+    path: '/formules',
+    element: <Formules />
   },
 ])
 createRoot(document.getElementById('root')).render(

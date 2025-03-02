@@ -13,7 +13,8 @@ function NavMenu({clickLink}) {
         <Link to={`/story`} className={`${classes.link} ${location.pathname == '/story' ? classes.hover : ''}`}>Сюжет</Link>
         <Link to={`/mechanics`} className={`${classes.link} ${location.pathname == '/mechanics' ? classes.hover : ''}`}>Справочник</Link>
         <Link to={`/map`} className={`${classes.link} ${location.pathname == '/map' ? classes.hover : ''}`}>Карта</Link>
-        <Link to="/kingdoms" className={`${classes.link} ${location.pathname == '/kingdoms' ? classes.hover : ''}`}>Королевства</Link>
+        <Link to={`/kingdoms`} className={`${classes.link} ${location.pathname == '/kingdoms' ? classes.hover : ''}`}>Королевства</Link>
+        <Link to={`/formules`} className={`${classes.link} ${location.pathname == '/formules' ? classes.hover : ''}`}>Формулы</Link>
       </nav>
     </>
   )
