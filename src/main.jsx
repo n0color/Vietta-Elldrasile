@@ -13,7 +13,6 @@ import Mechanics from "./routes/mechanics";
 import Story from "./routes/story";
 import MainPage from './mainpage';
 import Formules from './routes/formules';
-import Test from './routes/test';
 import ErrorPage404 from './error404';
 
 const Router = createBrowserRouter([
@@ -41,10 +40,6 @@ const Router = createBrowserRouter([
   {
     path: '/formules',
     element: <Formules />
-  },
-  {
-    path: '/test',
-    element: <Test />
   },
 ])
 createRoot(document.getElementById('root')).render(
