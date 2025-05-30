@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classes from "../styles/classes.module.scss";
 import NavMenu from "./components/menu";
+import InputComponent from "./components/inputComponent";
 
 function DoWeakBlow(Power, Modificator, CubeResult1) {
   let result = CubeResult1 - 4 + Math.round(0.25 * Power) + Modificator
@@ -34,7 +35,7 @@ function Formules() {
     DoPush,
   };
 
-  function onClickButtonResult(typeAttack) {
+  function ResultDamage(typeAttack) {
     const attackFunction = attackFunctions[typeAttack];
     if (attackFunction) {
       const result = attackFunction(Number(Power), Number(Modificator), Number(CubeResult1), Number(CubeResult2));
@@ -51,32 +52,19 @@ function Formules() {
       <details>
         <summary className={classes.header}>Ближний бой</summary>
       <main className={classes.content}>
-        <div>
-          <input type="number" value={Power} name="PowerInput" onChange={event => setPower(event.target.value)} />
-          <label htmlFor="PowerInput">Ваша сила</label>
-        </div>
-        <div>
-          <input type="number" value={Modificator} name="ModificatorInput" onChange={event => setModificator(event.target.value)} />
-          <label htmlFor="ModificatorInput">Ваш модификатор</label>
-        </div>
-        <div>
-          <input type="number" value={CubeResult1} name="CubeInput" onChange={event => setCubeResult1(event.target.value)} />
-          <label htmlFor="CubeInput">Результат кубиков</label>
+        <InputComponent value={Power} name="power" rusName="Сила" setValue={setPower} />
+        <InputComponent value={Modificator} name="modificator" rusName="Модификатор" setValue={setModificator} />
+        <InputComponent value={CubeResult1} name="cuberesult1" rusName="Результат кубика" setValue={setCubeResult1} />
           {TypeAttack === "DoKick" ? 
-            <div>
-              <input type="number" value={CubeResult2} name="CubeInput2" onChange={event => setCubeResult2(event.target.value)} />
-              <label htmlFor="CubeInput2">Результат кубиков</label>
-            </div>  
+            <InputComponent value={CubeResult2} name="cuberesult2" rusName="Результат кубика" setValue={setCubeResult2} />
           : ""}
-          
-        </div>
         <select value={TypeAttack} onChange={event => setTypeAttack(event.target.value)}>
           <option value="DoWeakBlow">Слабый удар</option>
           <option value="DoStrongBlow">Сильный удар</option>
           <option value="DoKick">Удар ногой</option>
           <option value="DoPush">Пинок</option>
         </select> 
-        {onClickButtonResult(TypeAttack)} 
+        {ResultDamage(TypeAttack)} 
         <button className={classes.button} onClick={() => {
           setModificator(0)
           setCubeResult1(0)
