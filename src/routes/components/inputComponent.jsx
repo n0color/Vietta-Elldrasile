@@ -1,5 +1,4 @@
 import {React, useState} from "react";
-import classes from "../../styles/classes.module.scss";
 
 function InputComponent({value, name, rusName, setValue}) {
   const inputName = `${name}Input`
